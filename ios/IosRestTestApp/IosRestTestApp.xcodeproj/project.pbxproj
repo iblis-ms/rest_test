@@ -15,6 +15,10 @@
 		212C1FF025A5FC3200EBFA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212C1FEE25A5FC3200EBFA5E /* LaunchScreen.storyboard */; };
 		212C1FFB25A5FC3200EBFA5E /* IosRestTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C1FFA25A5FC3200EBFA5E /* IosRestTestAppTests.swift */; };
 		212C200625A5FC3200EBFA5E /* IosRestTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C200525A5FC3200EBFA5E /* IosRestTestAppUITests.swift */; };
+		215FDBF825A61CAE00667558 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FDBF725A61CAE00667558 /* Author.swift */; };
+		215FDBFE25A61CC700667558 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FDBFD25A61CC700667558 /* Book.swift */; };
+		215FDC0325A61CD100667558 /* Quotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FDC0225A61CD100667558 /* Quotation.swift */; };
+		215FDC0A25A61E1600667558 /* QuotationServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FDC0925A61E1600667558 /* QuotationServiceAPI.swift */; };
 		7C82369EB0AE675D2AF3B193 /* Pods_IosRestTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF8D720657584655F3A25A4 /* Pods_IosRestTestAppTests.framework */; };
 		888C6B5F416DA6C8B9639424 /* Pods_IosRestTestApp_IosRestTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5B4D4C1D73C4132842A10D /* Pods_IosRestTestApp_IosRestTestAppUITests.framework */; };
 		FBD39F1FFF8E052C50DC5D3C /* Pods_IosRestTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3DF23A9CDD6DF50D975694 /* Pods_IosRestTestApp.framework */; };
@@ -53,6 +57,10 @@
 		212C200125A5FC3200EBFA5E /* IosRestTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosRestTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		212C200525A5FC3200EBFA5E /* IosRestTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosRestTestAppUITests.swift; sourceTree = "<group>"; };
 		212C200725A5FC3200EBFA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		215FDBF725A61CAE00667558 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		215FDBFD25A61CC700667558 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		215FDC0225A61CD100667558 /* Quotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotation.swift; sourceTree = "<group>"; };
+		215FDC0925A61E1600667558 /* QuotationServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationServiceAPI.swift; sourceTree = "<group>"; };
 		3BF8D720657584655F3A25A4 /* Pods_IosRestTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosRestTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5B4D4C1D73C4132842A10D /* Pods_IosRestTestApp_IosRestTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosRestTestApp_IosRestTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3DF23A9CDD6DF50D975694 /* Pods_IosRestTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosRestTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +124,9 @@
 		212C1FE225A5FC2600EBFA5E /* IosRestTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				215FDC0825A61DEE00667558 /* manager */,
+				215FDC0725A61DE000667558 /* repository */,
+				215FDBFC25A61CB700667558 /* model */,
 				212C1FE325A5FC2600EBFA5E /* AppDelegate.swift */,
 				212C1FE525A5FC2600EBFA5E /* SceneDelegate.swift */,
 				212C1FE725A5FC2600EBFA5E /* ViewController.swift */,
@@ -143,6 +154,31 @@
 				212C200725A5FC3200EBFA5E /* Info.plist */,
 			);
 			path = IosRestTestAppUITests;
+			sourceTree = "<group>";
+		};
+		215FDBFC25A61CB700667558 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				215FDBF725A61CAE00667558 /* Author.swift */,
+				215FDBFD25A61CC700667558 /* Book.swift */,
+				215FDC0225A61CD100667558 /* Quotation.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		215FDC0725A61DE000667558 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		215FDC0825A61DEE00667558 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				215FDC0925A61E1600667558 /* QuotationServiceAPI.swift */,
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 		66F2102A73414728CD05C7C8 /* Pods */ = {
@@ -408,6 +444,10 @@
 			files = (
 				212C1FE825A5FC2600EBFA5E /* ViewController.swift in Sources */,
 				212C1FE425A5FC2600EBFA5E /* AppDelegate.swift in Sources */,
+				215FDC0325A61CD100667558 /* Quotation.swift in Sources */,
+				215FDC0A25A61E1600667558 /* QuotationServiceAPI.swift in Sources */,
+				215FDBF825A61CAE00667558 /* Author.swift in Sources */,
+				215FDBFE25A61CC700667558 /* Book.swift in Sources */,
 				212C1FE625A5FC2600EBFA5E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
