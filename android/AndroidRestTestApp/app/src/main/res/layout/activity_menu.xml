@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_top_background"
-    tools:context=".MainMenu">
+    tools:context=".MenuActivity">
 
 
         <RelativeLayout
@@ -43,13 +43,15 @@
                     android:rowCount="3">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/find_authors_card"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="12dp"
-                        app:cardElevation="6dp">
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#FFF">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -58,12 +60,14 @@
                             android:orientation="vertical">
 
                             <ImageView
+                                android:id="@+id/find_authors_img"
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:src="@drawable/icon_writer"
                                 android:contentDescription="author icon" />
 
                             <TextView
+                                android:id="@+id/find_authors_label"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/menu_icon_author"
@@ -74,13 +78,15 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/find_books_card"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="12dp"
-                        app:cardElevation="6dp">
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#FFF">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -89,12 +95,14 @@
                             android:orientation="vertical">
 
                             <ImageView
+                                android:id="@+id/find_books_img"
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:src="@drawable/icon_book"
                                 android:contentDescription="book icon" />
 
                             <TextView
+                                android:id="@+id/find_books_label"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/menu_icon_book"
@@ -105,13 +113,15 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/find_quotations_card"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
                         app:cardCornerRadius="12dp"
-                        app:cardElevation="6dp">
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#FFF">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -120,12 +130,14 @@
                             android:orientation="vertical">
 
                             <ImageView
+                                android:id="@+id/find_quotations_img"
                                 android:layout_width="150dp"
                                 android:layout_height="150dp"
                                 android:src="@drawable/icon_quotation"
                                 android:contentDescription="quotation icon" />
 
                             <TextView
+                                android:id="@+id/find_quotations_label"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/menu_icon_quotation"

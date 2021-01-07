@@ -16,4 +16,8 @@ public class AuthorService {
     public List<Author> getAuthors(){
         return authorRepository.getAuthors();
     }
+
+    public List<Author> getAuthorsLike(String namePattern) {
+        return authorRepository.getAuthorsLike(namePattern);
+    }
 }
